@@ -8,11 +8,14 @@ importers:
 
   .:
     dependencies:
+      '@solopass/sdk':
+        specifier: file:../smartagent
+        version: smartagent@file:../smartagent
       react:
-        specifier: ^18.3.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@vitejs/plugin-react':
@@ -490,6 +493,9 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
+  smartagent@file:../smartagent:
+    resolution: {directory: ../smartagent, type: directory}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -954,6 +960,8 @@ snapshots:
       loose-envify: 1.4.0
 
   semver@6.3.1: {}
+
+  smartagent@file:../smartagent: {}
 
   source-map-js@1.2.1: {}
 
