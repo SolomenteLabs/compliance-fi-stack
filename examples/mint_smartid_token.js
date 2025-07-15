@@ -1,0 +1,1 @@
+// Example: mint_smartid_token

@@ -1,0 +1,1 @@
+// SoloPass contract logic

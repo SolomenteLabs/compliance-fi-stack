@@ -1,0 +1,1 @@
+// SmartID contract logic
