@@ -1,0 +1,13 @@
+{
+  "ignoreCommand": "echo 'Ignore tools/smartagent on Vercel'",
+  "builds": [
+    {
+      "src": "solopass-web-ui/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "includeFiles": ["solopass-web-ui/**"]
+}
