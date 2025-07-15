@@ -1,11 +1,16 @@
+// solopass-web-ui/src/App.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
 function App() {
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>✅ SoloPass is Live</h1>
-      <p>This is your React frontend deployed on Vercel.</p>
+    <div>
+      <h1>🎉 SoloPass Web UI Deployed!</h1>
+      <p>This is your working frontend base.</p>
     </div>
   )
 }
 
-export default App
-// App component
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />)
+
