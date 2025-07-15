@@ -1,9 +1,5 @@
 
 
-
-import { useState } from 'react';
-import { mint } from '@solopass/sdk';
-
 export default function MintPass({ address }) {
   const [days, setDays] = useState(30);
   const [tx, setTx] = useState('');
