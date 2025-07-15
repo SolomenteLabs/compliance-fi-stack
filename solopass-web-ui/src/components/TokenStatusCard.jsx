@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { check } from '@solopass/sdk';
 
+
 export default function TokenStatusCard({ address }) {
   const [status, setStatus] = useState('');
 
