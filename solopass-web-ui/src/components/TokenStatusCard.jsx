@@ -1,6 +1,4 @@
-import { mint } from '../../smartagent/src/agent';
-// or
-import { check } from '../../smartagent/src/agent';
+import { check } from '@solopass/sdk';
 import { useEffect, useState } from 'react';
 import { check } from '@solopass/sdk';
 
