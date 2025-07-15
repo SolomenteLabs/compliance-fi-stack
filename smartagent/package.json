@@ -1,1 +1,10 @@
-{ "name": "smartagent" }
+{
+  "name": "@solopass/sdk",
+  "version": "0.1.0",
+  "main": "src/agent.js",
+  "exports": {
+    ".": "./src/agent.js"
+  },
+  "type": "module"
+}
+
