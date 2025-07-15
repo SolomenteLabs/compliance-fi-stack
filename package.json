@@ -1,0 +1,9 @@
+{
+  "name": "compliance-fi-stack",
+  "private": true,
+  "workspaces": [
+    "solopass-web-ui",
+    "sdk"
+  ]
+}
+
