@@ -1,4 +1,3 @@
-import { check } from '@solopass/sdk';
 import { useEffect, useState } from 'react';
 import { check } from '@solopass/sdk';
 
@@ -16,10 +15,11 @@ export default function TokenStatusCard({ address }) {
       }
     };
     fetchStatus();
-    const id = setInterval(fetchStatus, 15000); // 15 s refresh
+    const id = setInterval(fetchStatus, 15000); // 15s refresh
     return () => clearInterval(id);
   }, [address]);
 
   if (!address) return null;
   return <p>{status}</p>;
 }
+
