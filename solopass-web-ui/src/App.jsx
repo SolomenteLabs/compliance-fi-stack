@@ -1,16 +1,18 @@
-// solopass-web-ui/src/App.jsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { useState } from 'react';
+import ConnectWallet from './components/ConnectWallet';
+import MintPass from './components/MintPass';
+import TokenStatusCard from './components/TokenStatusCard';
 
-function App() {
+export default function App() {
+  const [addr, setAddr] = useState('');
   return (
-    <div>
-      <h1>🎉 SoloPass Web UI Deployed!</h1>
-      <p>This is your working frontend base.</p>
+    <div style={{ padding: '2rem' }}>
+      <h1>🎉 SoloPass Dashboard</h1>
+      <ConnectWallet onConnect={setAddr} />
+      <MintPass address={addr} />
+      <TokenStatusCard address={addr} />
     </div>
-  )
+  );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />)
 
